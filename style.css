@@ -5,6 +5,12 @@
   
 
    .booms{
-    width: 150px;
-    height: 150px;
+    width:200px;
+    height:auto;
+    display: block;
+   }
+
+   .help{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
    }
