@@ -1,16 +1,21 @@
 
    body{
-     font-family:Georgia, sans-serif; 
+    font-family:Georgia, sans-serif; 
+    background-color: #A77EC2;
+    color: white;
    }
   
+   .header{
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+    
+  }
 
-   .booms{
-    width:640px;
-    height:720px;
-   
+   .imgContainer{
+    width:150px;
+    height:150px;
+    display:block;
    }
 
-   .help{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 10px;
-   }
+
