@@ -1,0 +1,8 @@
+
+
+const answers=[
+"A",
+"B"
+
+
+];
