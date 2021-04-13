@@ -1,8 +1,0 @@
-
-
-const answers=[
-"A",
-"B"
-
-
-];
