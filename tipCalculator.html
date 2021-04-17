@@ -11,14 +11,12 @@
         </div>
     </head>
 
-
     <body>
         <form id="buttonAndSubmit">
-            <input type="number" placeholder="Total bill" id="billAmount">
+            <input id="billAmount" type="number" placeholder="Total bill" >
             <button id="submitButton" type='button'>Submit</button> 
         </form>
         
-
         <select name="tipAmount" id="tipAmount">
             <option value="selectAmount">% to tip</option>
             <option value=5 selected>5%</option>
@@ -27,6 +25,8 @@
             <option value=20>20%</option>
         </select>
 
-        <div class="calculatedTip"></div>
+        <div id="calculatedTip">
+            
+        </div>
     </body>
 </html>
