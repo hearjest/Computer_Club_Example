@@ -1,12 +1,15 @@
 
    body{
     font-family:"Yu Mincho", Georgia, sans-serif; 
-    background-color: #2b2b2b;
+    background-color:rgb(56, 56, 56);
     color: white;
     text-align: center;
    }
   
-   
+   article{
+     display:block;
+     height:.4rem;
+   }
    .header{
     padding: 15px;
     font-size: 30px;
@@ -20,40 +23,81 @@
     text-align:left;
   }
 
+  .mainText,.immersionEntry{
+    max-width:650px ;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+  }
    .imgContainer{
     width:150px;
     height:150px;
     display:block;
+    
    }
 
    #WelcomePageSidebar{
+     /*background-color: rgb(48, 48, 48);*/
      font-size:15px;
-     display:block;
-     width: 15%;
-     padding-left: 10px;
-     margin-left: 5px;
-     float: left;
-     color:white;
-     text-align: left;
+     display:block;     
      position: fixed; /* Fixed Sidebar (stay in place on scroll) */
      z-index: 1; /* Stay on top */
      top: 5; /* Stay at the top */
      left: 0;
-    background-color: rgb(48, 48, 48);
+     margin-left: 5px;
+     float: left;
+     text-align: left;
+     width: 7%;
+     padding-top:150px;
+     padding-left: 10px;
+     color:white;
      overflow-x: hidden; /* Disable horizontal scroll */
-     padding-top: 5px;
+     min-height:100%;
+     max-height:100%;
+     font-family: "Yu Mincho";
+     line-height: 30px;
    }
 
   .link{
     color:lightgray;
     display:block;
+    text-decoration: none;
+    
   }
 
   .link:hover{
-    color:black;
+    color:purple;
   }
 
+  .dropDownButton{
+    border:none;
+    background-color: inherit;
+    font-size: inherit;
+    font-family:"Yu Mincho";
+    color:lightgray;
+    cursor:pointer;
+  }
 
+  .dropDownButton:hover, .dropDownButton:focus{
+    color: purple;
+  }
+
+  .dropDownContent{
+    display:none;
+    position:absolute;
+    z-index:1;
+    width: 100%;
+  }
+
+  .showContent{
+    display:block;
+  }
+  .dropDownContent a {
+    color: lightGray;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
   
 
 
