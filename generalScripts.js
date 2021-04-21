@@ -11,7 +11,7 @@ function openCloseDropDown(){
         }
       }
     }
-  }
+  };
 
   function darkLightModeToggle(){
     document.body.classList.toggle("darkMode");
@@ -26,7 +26,7 @@ function openCloseDropDown(){
       }
     }
 
-    for(var i=0;i<toggleDropDowns.length;i++){
+    for(i=0;i<toggleDropDowns.length;i++){
       if(toggleDropDowns[i].classList.contains("darkMode")){
         toggleDropDowns[i].classList.remove("darkMode");
       }else{
