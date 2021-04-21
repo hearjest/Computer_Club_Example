@@ -5,22 +5,37 @@
     color: white;
     text-align: center;
    }
-  
+
    article{
      display:block;
-     height:.4rem;
+     height:35px;
    }
+   
+   li{
+    text-align:left;
+  }
    .header{
     padding: 15px;
     font-size: 30px;
   }
 
-  li{
+  #darkModeButton{
+    border:none;
+    color:lightgray;
+    background-color: rgb(56, 56, 56);
     text-align:left;
+    font-family:"Yu Mincho";
+    cursor:pointer;
+    
   }
 
   #listHeader{
     text-align:left;
+  }
+
+  .tracker{
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .mainText,.immersionEntry{
@@ -28,7 +43,9 @@
     position:relative;
     margin-left:auto;
     margin-right:auto;
+    font-size:15px;
   }
+
    .imgContainer{
     width:150px;
     height:150px;
@@ -47,9 +64,9 @@
      margin-left: 5px;
      float: left;
      text-align: left;
-     width: 7%;
+     width: 8%;
      padding-top:150px;
-     padding-left: 10px;
+     padding-left:5px;
      color:white;
      overflow-x: hidden; /* Disable horizontal scroll */
      min-height:100%;
@@ -62,7 +79,6 @@
     color:lightgray;
     display:block;
     text-decoration: none;
-    
   }
 
   .link:hover{
@@ -76,10 +92,12 @@
     font-family:"Yu Mincho";
     color:lightgray;
     cursor:pointer;
+    margin-left:-6%;
   }
 
   .dropDownButton:hover, .dropDownButton:focus{
     color: purple;
+    
   }
 
   .dropDownContent{
@@ -87,17 +105,19 @@
     position:absolute;
     z-index:1;
     width: 100%;
+    
   }
 
   .showContent{
     display:block;
   }
   .dropDownContent a {
-    color: lightGray;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
-  
 
-
+  .darkMode{/*Keep at bottom so it has higher precedence pls*/
+    background-color:white !important;
+    color:rgb(56, 56, 56) !important;
+  }
