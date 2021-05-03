@@ -13,24 +13,24 @@ function openCloseDropDown(){
     }
   };
 
-  function darkLightModeToggle(){
-    document.body.classList.toggle("darkMode");
-    document.getElementById("darkModeButton").classList.toggle("darkMode");
+  function lightLightModeToggle(){
+    document.body.classList.toggle("lightMode");
+    document.getElementById("lightModeButton").classList.toggle("lightMode");
     var toggleDropDowns =document.getElementsByClassName("dropDownButton");
     var temp = document.getElementsByClassName("link");
     for(var i=0;i<temp.length;i++){
-      if(temp[i].classList.contains("darkMode")){
-        temp[i].classList.remove("darkMode");
+      if(temp[i].classList.contains("lightMode")){
+        temp[i].classList.remove("lightMode");
       }else{
-        temp[i].classList.add("darkMode");
+        temp[i].classList.add("lightMode");
       }
     }
 
     for(i=0;i<toggleDropDowns.length;i++){
-      if(toggleDropDowns[i].classList.contains("darkMode")){
-        toggleDropDowns[i].classList.remove("darkMode");
+      if(toggleDropDowns[i].classList.contains("lightMode")){
+        toggleDropDowns[i].classList.remove("lightMode");
       }else{
-        toggleDropDowns[i].classList.add("darkMode");
+        toggleDropDowns[i].classList.add("lightMode");
       }
     }
   }

@@ -10,6 +10,10 @@
      display:block;
      height:35px;
    }
+
+   article p{
+     text-align:left;
+   }
    
    li{
     text-align:left;
@@ -19,14 +23,14 @@
     font-size: 30px;
   }
 
-  #darkModeButton{
+  #lightModeButton{
     border:none;
     color:lightgray;
     background-color: rgb(56, 56, 56);
     text-align:left;
     font-family:"Yu Mincho";
     cursor:pointer;
-    
+    margin-left:-3%;/*How do I make this aligned with the links?*/
   }
 
   #listHeader{
@@ -36,6 +40,10 @@
   .tracker{
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .Comments{
+    text-align: left;
   }
 
   .mainText,.immersionEntry{
@@ -73,6 +81,8 @@
      max-height:100%;
      font-family: "Yu Mincho";
      line-height: 30px;
+     border:2px;
+     border-color:white;
    }
 
   .link{
@@ -92,7 +102,7 @@
     font-family:"Yu Mincho";
     color:lightgray;
     cursor:pointer;
-    margin-left:-6%;
+    margin-left:-3%;
   }
 
   .dropDownButton:hover, .dropDownButton:focus{
@@ -117,7 +127,7 @@
     display: block;
   }
 
-  .darkMode{/*Keep at bottom so it has higher precedence pls*/
+  .lightMode{/*Keep at bottom so it has higher precedence pls*/
     background-color:white !important;
     color:rgb(56, 56, 56) !important;
   }
