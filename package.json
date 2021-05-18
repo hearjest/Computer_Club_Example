@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/hearjest/hearjest.github.io/issues"
   },
-  "homepage": "https://github.com/hearjest/hearjest.github.io#readme"
+  "homepage": "https://github.com/hearjest/hearjest.github.io#readme",
+  "dependencies": {
+    "mime-types": "^2.1.30"
+  }
 }
