@@ -2,28 +2,45 @@
   <html>
 
     <head>
-      <title>Hello there</title>
-      <meta charset="uft8">
+      <title>About Me</title>
       <link rel="stylesheet" href="style.css" />
+      <meta charset="uft8">
+      <script src="generalScripts.js"defer></script>
+      
     </head>
  
-    <body>
+    <body id="body">
+
+      <aside id="WelcomePageSidebar">
+  
+        <div class="lightModeButtonContainer">
+          <button id="lightModeButton" onclick="lightLightModeToggle()">Toggle Dark/Light Mode</button>
+        </div>
+  
+        <div>
+          <a class="link" href="index.html">Main Page</a>
+          <a class="link" href="style.css">Stylesheet</a>
+          <a class="link" href="aboutMe.html">About me</a>
+          <a class="link" href="tipCalculator.html">Tip Calculator</a>
+  
+          <div class="dropDown">
+            <button class="dropDownButton" onclick="openCloseDropDown()">Japanese</button>
+            <div class="dropDownContent" id="JapaneseRelatedLinks">
+              <a class="link" href="ImmersionTracking.html">Immersion Tracking</a>
+            </div>
+          </div>
+  
+        </div>
+      </aside>
       <div class="header">
-      <h1>The About Me Page ( ͡° ͜ʖ ͡°)</h1>
-
-      <hr></hr>
-
-    </div>
-    <table>
-      <tr> 
-        <th>Last name</th>
-        <th>First Name</th>
-      </tr>
-      <tr>
-        <td>Zeng</td>
-        <td>Brian</td>
-       </tr>
-    </table>
-
+        <h1>About Me</h1>
+        </div>
+      <div class="mainText">
+      <article>
+        <h4 width=50%;>Who are you?</h4>
+        <p>An overly stressed student who, by dumb luck, has managed to live 17 years.</p>
+        </article>
+       </div>
+    
     </body>
 </html>
