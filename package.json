@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/hearjest/hearjest.github.io#readme",
   "dependencies": {
-    "mime-types": "^2.1.30"
+    "express": "^4.17.1"
   }
 }
