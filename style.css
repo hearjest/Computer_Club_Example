@@ -1,13 +1,18 @@
-
+html{
+  height:100%;
+}
+   
    body{
     font-family:"Yu Mincho", Georgia, sans-serif; 
     background-color:rgb(56, 56, 56);
     color: white;
     text-align: center;
+    display:relative;
+    margin:0%;
+    overflow:hidden;
    }
 
    article{
-     display:block;
      height:35px;
    }
 
@@ -18,9 +23,15 @@
    li{
     text-align:left;
   }
+
+  h1{
+    margin:0%;
+  }
+
    .header{
-    padding: 15px;
-    font-size: 30px;
+    font-size: 10px;
+    min-height: 100%;
+    background:#9933ff;
   }
 
   #lightModeButton{
@@ -30,7 +41,7 @@
     text-align:left;
     font-family:"Yu Mincho";
     cursor:pointer;
-    margin-left:-3%;/*How do I make this aligned with the links?*/
+    
   }
 
   #listHeader{
@@ -48,41 +59,37 @@
   }
 
   .mainText,.immersionEntry{
-    max-width:650px ;
     position:relative;
     margin-left:auto;
     margin-right:auto;
     font-size:15px;
-    width:50%;
+    width:35%;
   }
 
    .imgContainer{
     width:150px;
     height:150px;
     display:block;
-    
    }
 
    #WelcomePageSidebar{
      /*background-color: rgb(48, 48, 48);*/
      font-size:15px;
-     display:block;     
      position: fixed; /* Fixed Sidebar (stay in place on scroll) */
      z-index: 1; /* Stay on top */
-     top: 5; /* Stay at the top */
-     left: 0;
-     margin-left: 5px;
+     top: 15%; /* Stay at the top */
+     margin-left: 0.5rem;
      float: left;
      text-align: left;
      width: 8%;
-     padding-top:150px;
+     padding-top:1em;
      padding-left:5px;
      color:white;
      overflow-x: hidden; /* Disable horizontal scroll */
-     min-height:100%;
-     max-height:100%;
+     min-height:90%;
+     max-height:90%;
      font-family: "Yu Mincho";
-     line-height: 30px;
+     line-height: 2em;
      border:2px;
      border-color:white;
    }
@@ -117,7 +124,6 @@
     position:absolute;
     z-index:1;
     width: 100%;
-    
   }
 
   .showContent{
