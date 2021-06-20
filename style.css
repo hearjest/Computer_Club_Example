@@ -10,6 +10,7 @@ html{
     display:relative;
     margin:0%;
     overflow:hidden;
+    
    }
 
    article{
@@ -28,7 +29,7 @@ html{
     margin:0%;
   }
 
-   .header{
+   .topBar{
     font-size: 10px;
     min-height: 100%;
     background:#9933ff;
@@ -100,7 +101,7 @@ html{
     text-decoration: none;
   }
 
-  .link:hover{
+  .link:hover,.link:focus{
     color:purple;
   }
 
@@ -116,8 +117,9 @@ html{
 
   .dropDownButton:hover, .dropDownButton:focus{
     color: purple;
-    
   }
+
+  
 
   .dropDownContent{
     display:none;
@@ -136,6 +138,10 @@ html{
   }
 
   .lightMode{/*Keep at bottom so it has higher precedence pls*/
-    background-color:white !important;
-    color:rgb(56, 56, 56) !important;
+    background-color:white ;
+    color:rgb(56, 56, 56) ;
+  }
+
+  .link.lightMode:hover{/*Giga brain moment*/
+    color:#9933ff;
   }

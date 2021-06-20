@@ -13,9 +13,8 @@ function openCloseDropDown(){
     }
   };
 
-  function lightLightModeToggle(){
+ function lightLightModeToggle(){
     document.body.classList.toggle("lightMode");
-    document.getElementById("lightModeButton").classList.toggle("lightMode");
     var toggleDropDowns =document.getElementsByClassName("dropDownButton");
     var temp = document.getElementsByClassName("link");
     for(var i=0;i<temp.length;i++){
