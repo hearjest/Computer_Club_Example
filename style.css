@@ -1,147 +1,174 @@
-html{
-  height:100%;
+html {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
-   
-   body{
-    font-family:"Yu Mincho", Georgia, sans-serif; 
-    background-color:rgb(56, 56, 56);
-    color: white;
-    text-align: center;
-    display:relative;
-    margin:0%;
-    overflow:hidden;
-    
-   }
 
-   article{
-     height:35px;
-   }
+body {
+  font-family: "Yu Mincho", Georgia, sans-serif;
+  background-color: rgb(56, 56, 56);
+  color: lightGray;
+  text-align: center;
+  display: relative;
+  margin: 0;
+}
 
-   article p{
-     text-align:left;
-   }
-   
-   li{
-    text-align:left;
-  }
+article {
+  height: 35px;
+}
 
-  h1{
-    margin:0%;
-  }
+article p, li {
+  text-align: left;
+}
 
-   .topBar{
-    font-size: 10px;
-    min-height: 100%;
-    background:#9933ff;
-  }
+h1 {
+  margin: 0%;
+}
 
-  #lightModeButton{
-    border:none;
-    color:lightgray;
-    background-color: rgb(56, 56, 56);
-    text-align:left;
-    font-family:"Yu Mincho";
-    cursor:pointer;
-    
-  }
+.lightMode {
+  /*Keep at bottom so it has higher precedence pls*/
+  background-color: white;
+  color: rgb(56, 56, 56) !important;
+}
 
-  #listHeader{
-    text-align:left;
-  }
+.lightMode a, .lightMode button, .lightMode div {
+  background-color: white!important;
+  color: rgb(56, 56, 56)!important;
+}
 
-  .tracker{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-  }
+.topBar {
+  font-size: 10px;
+  min-height: 100%;
+  background: #872fdf;
+}
 
-  .Comments{
-    text-align: left;
-  }
+.aboutMe {
+  margin-right: 5%;
+  margin-left: 15%;
+  width: 40%;
+  text-align: left;
+}
 
-  .mainText,.immersionEntry{
-    position:relative;
-    margin-left:auto;
-    margin-right:auto;
-    font-size:15px;
-    width:35%;
-  }
+#lightModeButton {
+  border: none;
+  color: lightgray;
+  background-color: rgb(56, 56, 56);
+  text-align: left;
+  font-family: "Yu Mincho";
+  cursor: pointer;
+}
 
-   .imgContainer{
-    width:150px;
-    height:150px;
-    display:block;
-   }
+#listHeader {
+  text-align: left;
+}
 
-   #WelcomePageSidebar{
-     /*background-color: rgb(48, 48, 48);*/
-     font-size:15px;
-     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-     z-index: 1; /* Stay on top */
-     top: 15%; /* Stay at the top */
-     margin-left: 0.5rem;
-     float: left;
-     text-align: left;
-     width: 8%;
-     padding-top:1em;
-     padding-left:5px;
-     color:white;
-     overflow-x: hidden; /* Disable horizontal scroll */
-     min-height:90%;
-     max-height:90%;
-     font-family: "Yu Mincho";
-     line-height: 2em;
-     border:2px;
-     border-color:white;
-   }
+.tracker {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
 
-  .link{
-    color:lightgray;
-    display:block;
-    text-decoration: none;
-  }
+.Comments {
+  text-align: left;
+}
 
-  .link:hover,.link:focus{
-    color:purple;
-  }
+.mainText, .immersionEntry {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  width: 35%;
+}
 
-  .dropDownButton{
-    border:none;
-    background-color: inherit;
-    font-size: inherit;
-    font-family:"Yu Mincho";
-    color:lightgray;
-    cursor:pointer;
-    margin-left:-3%;
-  }
+.imgContainer {
+  width: 20%;
+  height: 20%;
+  display: block;
+  margin-left: 55%;
+}
 
-  .dropDownButton:hover, .dropDownButton:focus{
-    color: purple;
-  }
+#WelcomePageSidebar {
+  /*background-color: rgb(48, 48, 48);*/
+  font-size: 15px;
+  position: fixed;
+  /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1;
+  /* Stay on top */
+  top: 15%;
+  /* Stay at the top */
+  margin-left: 0.5rem;
+  float: left;
+  text-align: left;
+  width: 8%;
+  padding-top: 1em;
+  padding-left: 5px;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  min-height: 90%;
+  max-height: 90%;
+  font-family: "Yu Mincho";
+  line-height: 2em;
+  border: 2px;
+  border-color: white;
+}
 
-  
+.link{
+  color: lightgray;
+  display: block;
+  text-decoration: none;
+}
 
-  .dropDownContent{
-    display:none;
-    position:absolute;
-    z-index:1;
-    width: 100%;
-  }
+.link:hover, .link:focus, .dropDownButton:hover {
+  color: #872fdf!important;
+}
 
-  .showContent{
-    display:block;
-  }
-  .dropDownContent a {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+.dropDown {
+  color: white;
+}
 
-  .lightMode{/*Keep at bottom so it has higher precedence pls*/
-    background-color:white ;
-    color:rgb(56, 56, 56) ;
-  }
+.dropDownButton {
+  border: none;
+  background-color: inherit;
+  font-size: inherit;
+  font-family: "Yu Mincho";
+  color: lightGray;
+  cursor: pointer;
+  margin-left: -3%;
+}
 
-  .link.lightMode:hover{/*Giga brain moment*/
-    color:#9933ff;
-  }
+.dropDownButton:hover, .dropDownButton:focus {
+  color: #872fdf;
+}
+
+.dropDownContent {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.dropDownContent a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.showContent {
+  display: block;
+}
+
+#quizContainer {
+  width: 40%;
+  height: 30rem;
+  margin-top: 5%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(56, 56, 56);
+  padding: 0.2rem;
+  border: 2px solid #9933ff;
+  overflow-y: hidden;
+}
+
+.quiz {
+  height: 90%;
+}
