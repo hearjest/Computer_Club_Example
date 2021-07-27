@@ -27,7 +27,7 @@ h1 {
 
 .lightMode {
   /*Keep at bottom so it has higher precedence pls*/
-  background-color: white;
+  background-color: white !important;
   color: rgb(56, 56, 56) !important;
 }
 
@@ -169,6 +169,4 @@ h1 {
   overflow-y: hidden;
 }
 
-.quiz {
-  height: 90%;
-}
+

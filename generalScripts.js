@@ -20,3 +20,7 @@ function openCloseDropDown(){
     document.body.classList.add("lightMode");
    }
   }
+  document.getElementById("submitButton").onclick=function(){
+    calculateTip();
+};
+

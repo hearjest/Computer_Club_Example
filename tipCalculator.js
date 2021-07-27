@@ -11,5 +11,4 @@ function calculateTip(){
     tipTotal=Math.round(tipTotal * 100) / 100;
     document.getElementById("calculatedTip").textContent=tipTotal;
     console.log(tipTotal);
-
 }
